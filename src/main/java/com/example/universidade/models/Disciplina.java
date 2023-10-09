@@ -3,6 +3,8 @@ package com.example.universidade.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity(name = "disciplina")
 @Table(name = "disciplinas")
 @Getter
@@ -31,5 +33,5 @@ public class Disciplina {
     private Curso curso;
 
     @OneToMany(mappedBy = "disciplina")
-    private Turma turma;
+    private List<Turma> turma;
 }
