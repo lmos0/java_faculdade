@@ -1,14 +1,12 @@
 package com.example.universidade.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity(name = "dados_endereco")
 @Table(name = "dados_endereco")
 @Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
